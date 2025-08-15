@@ -1,0 +1,14 @@
+{
+  "name": "domain-lander",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "http-server -p 5173 .",
+    "dev:https": "http-server -S -C localhost.pem -K localhost-key.pem -p 5173 .",
+    "build": "echo Static project \u2014 nothing to build",
+    "start": "npm run dev"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

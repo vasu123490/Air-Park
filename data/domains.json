@@ -1,0 +1,29 @@
+{
+  "archiangel.com": {
+    "price": "£12,345",
+    "note": "",
+    "seo-keywords": "architecture design, architectural services, architectural angel, angel investor architecture, angel funded architecture, architectural inspiration, architecture business funding, architecture guardian, angel architect",
+    "use-cases": "Architecture firm branding as a guiding/protective influence; Platform connecting architects with investors; Inspirational architecture blog or magazine; Charity or NGO using architecture for good causes"
+  },
+  "example.com": {
+    "price": "£12,345",
+    "note": "",
+    "domain-group": "example",
+    "seo-keywords": "architecture design, architectural services, architectural angel, angel investor architecture, angel funded architecture, architectural inspiration, architecture business funding, architecture guardian, angel architect",
+    "use-cases": "Architecture firm branding as a guiding/protective influence; Platform connecting architects with investors; Inspirational architecture blog or magazine; Charity or NGO using architecture for good causes"
+  },
+  "example.ai": {
+    "domain-group": "example",
+    "price": "£12,345",
+    "note": "",
+    "seo-keywords": "architecture design, architectural services, architectural angel, angel investor architecture, angel funded architecture, architectural inspiration, architecture business funding, architecture guardian, angel architect",
+    "use-cases": "Architecture firm branding as a guiding/protective influence; Platform connecting architects with investors; Inspirational architecture blog or magazine; Charity or NGO using architecture for good causes"
+  },
+  "example.net": {
+    "domain-group": "example",
+    "price": "£12,345",
+    "note": "",
+    "seo-keywords": "architecture design, architectural services, architectural angel, angel investor architecture, angel funded architecture, architectural inspiration, architecture business funding, architecture guardian, angel architect",
+    "use-cases": "Architecture firm branding as a guiding/protective influence; Platform connecting architects with investors; Inspirational architecture blog or magazine; Charity or NGO using architecture for good causes"
+  }
+}
