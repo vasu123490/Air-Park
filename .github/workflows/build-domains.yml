@@ -1,0 +1,82 @@
+# .github/workflows/build-domains.yml
+name: Build domains.json from Airtable
+on:
+  push: { branches: [main] }
+  workflow_dispatch:
+  schedule:
+    - cron: "0 */6 * * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      AT_BASE: appxLxgRbkXd31y9w
+      AT_TABLE: Domains
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate data/domains.json from Airtable
+        env:
+          AIRTABLE_TOKEN: ${{ secrets.AIRTABLE_TOKEN }}
+        run: |
+          set -euo pipefail
+          mkdir -p data
+
+          python3 - << 'PY'
+          import json, os, urllib.parse, urllib.request
+
+          BASE   = os.environ["AT_BASE"]
+          TABLE  = os.environ["AT_TABLE"]
+          TOKEN  = os.environ["AIRTABLE_TOKEN"]
+
+          api = f"https://api.airtable.com/v0/{BASE}/{urllib.parse.quote(TABLE)}"
+          headers = { "Authorization": f"Bearer {TOKEN}" }
+
+          records = []
+          params = "?pageSize=100&view=" + urllib.parse.quote("Grid view")
+          url = api + params
+          while True:
+            req = urllib.request.Request(url, headers=headers)
+            with urllib.request.urlopen(req) as resp:
+              data = json.loads(resp.read().decode("utf-8"))
+            records.extend(data.get("records", []))
+            off = data.get("offset")
+            if not off: break
+            url = api + params + "&offset=" + urllib.parse.quote(off)
+
+          out = {}
+          for r in records:
+            f = r.get("fields", {})
+            dn = (f.get("DomainName") or "").strip().lower()
+            if not dn:
+              continue
+
+            price = (f.get("Sell Price") or "").strip()
+            note  = (f.get("Sell Note") or "").strip()
+            group = (f.get("Domain Group") or "").strip()
+            seo   = (f.get("SEO Keywords") or "").strip()
+            uses  = (f.get("Use-cases") or "").strip()
+
+            # skip if all mapped fields are empty (only DomainName present)
+            if not any([price, note, group, seo, uses]):
+              continue
+
+            out[dn] = {
+              "price": price,
+              "note": note,
+              "domain-group": group,
+              "seo-keywords": seo,
+              "use-cases": uses,
+            }
+
+          with open("data/domains.json","w",encoding="utf-8") as fp:
+            json.dump(out, fp, ensure_ascii=False, indent=2)
+          PY
+
+      - name: Commit & push domains.json
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/domains.json
+          git commit -m "Update domains.json from Airtable" || echo "No changes"
+          git push
