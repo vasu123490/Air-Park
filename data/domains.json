@@ -1,29 +1,933 @@
 {
+  "barlighting.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "",
+    "seo-keywords": "bar lighting, pub lighting, nightclub lighting, cocktail bar lights, LED bar lighting, bar ambience lighting, hospitality lighting, commercial bar lighting",
+    "use-cases": "Supplier of lighting for bars, pubs, and nightclubs; Interior design service for hospitality venues; Lighting retailer specialising in bar and restaurant environments; Custom lighting solutions for hospitality sector"
+  },
+  "ledstrip.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "",
+    "seo-keywords": "LED strip, LED strip lights, flexible LED lighting, LED tape, RGB LED strip, LED under cabinet lighting, LED accent lighting, LED strip fixtures",
+    "use-cases": "Supplier of LED strip lights; E-commerce store for flexible LED lighting; Manufacturer of decorative LED tape; Installer of LED accent lighting"
+  },
+  "customerbox.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "",
+    "seo-keywords": "customer box, customer engagement, customer experience platform, CRM software, customer rewards box, subscription box customers, customer feedback tools, customer loyalty platform",
+    "use-cases": "SaaS platform for managing customer engagement; Subscription box company for customers; CRM or feedback management tool; Customer loyalty program provider"
+  },
+  "lightingbuyinggroup.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "",
+    "seo-keywords": "lighting buying group, lighting purchasing group, lighting procurement, trade lighting buying, bulk lighting deals, group buying for lighting, lighting co-op, lighting wholesale group",
+    "use-cases": "Trade cooperative for lighting purchases; Bulk buying network for lighting retailers; Procurement platform for lighting; Lighting industry buying consortium"
+  },
+  "whateverlabs.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "recFLPMQdnMmEUwCP",
+    "seo-keywords": "",
+    "use-cases": ""
+  },
+  "signlighting.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "",
+    "seo-keywords": "sign lighting, LED sign lights, shop sign lighting, outdoor sign lighting, commercial sign lighting, illuminated signage, retail sign lighting, billboard lighting",
+    "use-cases": "Supplier of lighting for commercial signs; Sign lighting installation services; Manufacturer of LED sign lights; Retail signage illumination specialist"
+  },
+  "chamonixproperty.net": {
+    "price": "",
+    "note": "",
+    "domain-group": "",
+    "seo-keywords": "Chamonix property, Chamonix real estate, Chamonix homes, Chamonix apartments, property for sale Chamonix, Chamonix chalets, buy property Chamonix, Chamonix estate agent",
+    "use-cases": "Real estate listings site for Chamonix; Agency marketing properties in the French Alps; Chamonix property investment consultancy; Online portal for Chamonix housing market"
+  },
+  "marinabookings.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "recuvr6zd0hLpO2kB",
+    "seo-keywords": "marina bookings, boat berth bookings, marina reservations, yacht mooring bookings, marina slip rental, marina space booking, dock bookings, harbour bookings",
+    "use-cases": "UK marina booking platform; Boat mooring reservation service; Yacht berth booking website; Harbour slip rental marketplace"
+  },
+  "whateverlabs.co": {
+    "price": "",
+    "note": "",
+    "domain-group": "recFLPMQdnMmEUwCP",
+    "seo-keywords": "",
+    "use-cases": ""
+  },
+  "thelightsource.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "recWLCnadmss1UL9t",
+    "seo-keywords": "",
+    "use-cases": ""
+  },
+  "webbelief.com": {
+    "price": "500",
+    "note": "",
+    "domain-group": "",
+    "seo-keywords": "",
+    "use-cases": ""
+  },
+  "lightmonster.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "reckFF9oNmJNKhvzJ",
+    "seo-keywords": "light monster, lighting store UK, LED lighting, decorative lighting, commercial lighting, light fixtures UK, lighting retailer, lighting shop UK",
+    "use-cases": "UK-based lighting retailer; Online lighting megastore; Supplier of lighting products for home and business; Lighting brand"
+  },
+  "lightingbrokerage.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "",
+    "seo-keywords": "lighting brokerage, lighting sales broker, lighting deals, wholesale lighting broker, lighting supplier broker, lighting reseller broker, lighting industry broker, lighting stock brokerage",
+    "use-cases": "Broker service connecting lighting manufacturers to buyers; Wholesale lighting deals platform; Lighting sales agent; Lighting stock clearance broker"
+  },
+  "hotelequipment.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "",
+    "seo-keywords": "hotel equipment, hospitality supplies, hotel furniture, hotel lighting, hotel amenities, hotel catering equipment, hotel appliances, hotel operating supplies",
+    "use-cases": "Supplier of hotel and hospitality equipment; Distributor of furniture and fittings for hotels; Wholesale catering and amenities provider; Hotel refurbishment supply business"
+  },
+  "churchillbrown.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "rec2gTHuc4TLRYldO",
+    "seo-keywords": "Churchill Brown, UK estate agents, property sales, property rentals, letting agents, property management, property services, estate agency",
+    "use-cases": "Estate agency named Churchill Brown; UK property sales and lettings; Property management business; Local real estate office"
+  },
+  "whateverlabs.com": {
+    "price": "",
+    "note": "",
+    "domain-group": "recFLPMQdnMmEUwCP",
+    "seo-keywords": "",
+    "use-cases": ""
+  },
+  "lastcalllighting.com": {
+    "price": "",
+    "note": "",
+    "domain-group": "recBbZLZ95WKWGh3r",
+    "seo-keywords": "",
+    "use-cases": ""
+  },
+  "speedflyer.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "",
+    "seo-keywords": "speed flyer, speedflying, speed flying UK, paragliding speed flying, extreme sports flying, speed flyer equipment, speed flying gear, speedflying parachutes",
+    "use-cases": "Online store for speedflying equipment; Speedflying sports club; Supplier of paragliding and speedflying gear; Extreme sports event organiser"
+  },
+  "tradebox.com": {
+    "price": "",
+    "note": "",
+    "domain-group": "",
+    "seo-keywords": "trade box, trade platform, B2B marketplace, wholesale trade, trade software, business trading platform, wholesale platform, trade management software",
+    "use-cases": "B2B trading platform; Wholesale marketplace; Trade management SaaS; Online portal for bulk product sales"
+  },
+  "churchillandbrown.com": {
+    "price": "",
+    "note": "",
+    "domain-group": "rec2gTHuc4TLRYldO",
+    "seo-keywords": "Churchill and Brown, property sales, property rentals, letting agents, property management, international property, estate agency, real estate services",
+    "use-cases": "International-facing estate agency; Property sales and lettings business; Real estate consultancy; Property investment services"
+  },
+  "commerciallighting.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "",
+    "seo-keywords": "commercial lighting, LED commercial lights, office lighting, retail lighting, industrial lighting, warehouse lighting, commercial light fixtures, business lighting",
+    "use-cases": "Supplier of lighting for commercial spaces; Installer of business and retail lighting; Manufacturer of industrial lighting; Wholesale commercial lighting distributor"
+  },
+  "switchesandsockets.com": {
+    "price": "",
+    "note": "",
+    "domain-group": "recpUQWEEYnYpi7jj",
+    "seo-keywords": "",
+    "use-cases": ""
+  },
+  "lightbulbmonster.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "reckFF9oNmJNKhvzJ",
+    "seo-keywords": "light bulb monster, light bulbs, LED bulbs, energy-saving bulbs, decorative bulbs, bulk light bulbs, wholesale bulbs, lighting store UK",
+    "use-cases": "UK retailer of light bulbs; Brand for large range of bulb products; Wholesale bulb distributor; Online store for decorative and energy-efficient bulbs"
+  },
+  "luxovers.com": {
+    "price": "",
+    "note": "",
+    "domain-group": "reco5odRvW5KEbJRw",
+    "seo-keywords": "",
+    "use-cases": ""
+  },
+  "nodelight.com": {
+    "price": "1000",
+    "note": "",
+    "domain-group": "rec9F5aqUsd3RSXYJ",
+    "seo-keywords": "",
+    "use-cases": ""
+  },
+  "lightingdesign.net": {
+    "price": "",
+    "note": "",
+    "domain-group": "rec9cq2x9vNx4Sa7v",
+    "seo-keywords": "",
+    "use-cases": ""
+  },
+  "lightingnode.com": {
+    "price": "",
+    "note": "",
+    "domain-group": "",
+    "seo-keywords": "lighting node, smart lighting node, lighting control node, LED control node, wireless lighting node, lighting automation node, lighting tech node, lighting network node",
+    "use-cases": "International smart lighting control node supplier; Lighting automation brand; IoT lighting technology company; Lighting network hardware manufacturer"
+  },
+  "lightsourcescotland.com": {
+    "price": "",
+    "note": "",
+    "domain-group": "recWLCnadmss1UL9t",
+    "seo-keywords": "lightsource Scotland, Scottish lighting supplier, LED lighting Scotland, lighting design Scotland, commercial lighting Scotland, decorative lighting Scotland, lighting showroom Scotland, lighting consultancy Scotland",
+    "use-cases": "International marketing for Scottish lighting brand; Lighting design and supply company in Scotland; Exporter of Scottish lighting products; Lighting showroom promotion"
+  },
+  "nodelighting.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "rec9F5aqUsd3RSXYJ",
+    "seo-keywords": "",
+    "use-cases": ""
+  },
+  "lightingdesignonline.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "rec9cq2x9vNx4Sa7v",
+    "seo-keywords": "",
+    "use-cases": ""
+  },
+  "chandelierwinches.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "",
+    "seo-keywords": "chandelier winches, chandelier hoists, chandelier lifting systems, electric chandelier winches, chandelier maintenance, chandelier lowering systems, lighting winch systems, chandelier raising mechanisms",
+    "use-cases": "Supplier of chandelier winches; Installation services for chandelier hoists; Manufacturer of chandelier lowering systems; Maintenance tools for high-ceiling lighting"
+  },
+  "carparklighting.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "",
+    "seo-keywords": "car park lighting, parking lot lighting, LED car park lights, outdoor lighting, security lighting, floodlights, parking area illumination, exterior lighting systems",
+    "use-cases": "Supplier of lighting for car parks; Installation services for parking lot lighting; Manufacturer of LED floodlights; Security lighting specialist"
+  },
+  "hotellighting.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "reclmCJ9flr5Dh7DK",
+    "seo-keywords": "",
+    "use-cases": ""
+  },
+  "kosherfoods.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "",
+    "seo-keywords": "kosher foods, kosher groceries, kosher meat, kosher bakery, kosher catering, kosher meals, Jewish food, kosher products UK",
+    "use-cases": "Online kosher food retailer; Kosher catering service; Jewish grocery store; Distributor of kosher products in the UK"
+  },
+  "archibox.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "rechinuCsOM3XXfDT",
+    "seo-keywords": "",
+    "use-cases": ""
+  },
+  "chandelierwinches.com": {
+    "price": "",
+    "note": "",
+    "domain-group": "",
+    "seo-keywords": "chandelier winches, chandelier hoists, chandelier lifting systems, electric chandelier winches, chandelier maintenance, chandelier lowering systems, lighting winch systems, chandelier raising mechanisms",
+    "use-cases": "International supplier of chandelier winches; Online retailer of chandelier lifting systems; Manufacturer of chandelier lowering mechanisms; Lighting maintenance equipment provider"
+  },
+  "yogamission.co.uk": {
+    "price": "2000",
+    "note": "",
+    "domain-group": "",
+    "seo-keywords": "yoga mission, yoga classes, yoga retreats, yoga teacher training, yoga events, yoga workshops, yoga charity, yoga lifestyle",
+    "use-cases": "Yoga retreat and training provider; Charity promoting yoga; Yoga events and workshops organiser; Yoga lifestyle brand"
+  },
+  "bulbs.ai": {
+    "price": "",
+    "note": "",
+    "domain-group": "reczSrOnyETX5krqS",
+    "seo-keywords": "bulbs, light bulbs, smart bulbs, AI lighting, AI bulb control, LED bulbs, AI-powered lighting, intelligent lighting systems",
+    "use-cases": "Smart lighting brand using AI; AI-controlled bulb manufacturer; Online store for AI-enabled bulbs; IoT home lighting automation platform"
+  },
+  "clearancelightingshop.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "recBsvcewhzE98c44",
+    "seo-keywords": "",
+    "use-cases": ""
+  },
+  "tablelampshop.com": {
+    "price": "",
+    "note": "",
+    "domain-group": "recxjtgkVtcLuntLj",
+    "seo-keywords": "",
+    "use-cases": ""
+  },
+  "churchlighting.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "rec2ElpbEL5xBLkP5",
+    "seo-keywords": "church lighting, LED church lights, historic building lighting, worship space lighting, altar lighting, architectural lighting, religious building lighting, sanctuary lighting",
+    "use-cases": "Supplier of church lighting fixtures; Designer of lighting for religious buildings; Installer of LED church lighting; Specialist in heritage building illumination"
+  },
+  "spalighting.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "",
+    "seo-keywords": "spa lighting, wellness lighting, LED spa lights, relaxation lighting, decorative spa lighting, spa ambience lighting, pool and spa lighting, wellness centre lighting",
+    "use-cases": "Supplier of lighting for spas and wellness centres; Manufacturer of decorative spa lighting; Installer of ambience lighting for spas; Pool and spa LED lighting specialist"
+  },
+  "lightsourcescotland.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "recWLCnadmss1UL9t",
+    "seo-keywords": "lightsource Scotland, Scottish lighting supplier, LED lighting Scotland, lighting design Scotland, commercial lighting Scotland, decorative lighting Scotland, lighting showroom Scotland, lighting consultancy Scotland",
+    "use-cases": "Scottish lighting supplier; Lighting design and installation company; Lighting showroom in Scotland; Supplier of commercial and decorative lighting"
+  },
+  "ildb.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "recV7C0SJgDblyAnK",
+    "seo-keywords": "ILDB, UK lighting, lighting design, lighting business, lighting directory, lighting consultancy, lighting services, lighting network, UK interiors database, British interior design directory, interiors and lighting suppliers, UK literature database, British book directory, UK author listings, literary network UK",
+    "use-cases": "UK lighting consultancy; Lighting supplier network in UK; Lighting design and supply platform; Lighting trade and industry portal; UK interiors and lighting supplier database; Interior design and décor supplier directory; UK-focused literature database; British book and author directory; Literary networking platform; Book review site for UK market"
+  },
+  "cryptoni.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "",
+    "seo-keywords": "crypto, cryptocurrency, cryptographic, blockchain, digital currency, crypto trading, crypto investing, cryptocurrency news, crypto wallet",
+    "use-cases": "Cryptocurrency news and education platform; Crypto trading tools provider; Blockchain consultancy; Brand for crypto investment services"
+  },
+  "bulbmonster.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "reckFF9oNmJNKhvzJ",
+    "seo-keywords": "",
+    "use-cases": ""
+  },
+  "tablelampsonline.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "",
+    "seo-keywords": "table lamps online, table lighting, decorative table lamps, bedside lamps, desk lamps, modern table lamps, table lamp store, table lamp shop UK",
+    "use-cases": "Online retailer of table lamps; Supplier of decorative and functional table lighting; E-commerce store for modern and classic table lamps; Lighting retailer specialising in table lamps"
+  },
+  "lightingnode.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "",
+    "seo-keywords": "lighting node, smart lighting node, lighting control node, LED control node, wireless lighting node, lighting automation node, lighting tech node, lighting network node",
+    "use-cases": "UK supplier of smart lighting control nodes; Lighting automation technology brand; IoT lighting hardware provider; Lighting system integrator"
+  },
+  "buyinggroup.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "",
+    "seo-keywords": "buying group, purchasing group, collective buying, group purchasing organisation, bulk buying, trade buying, procurement group, co-op purchasing",
+    "use-cases": "Trade buying cooperative; Group purchasing for businesses; Procurement platform for bulk orders; Industry-specific buying consortium"
+  },
+  "lightingdesignonline.com": {
+    "price": "",
+    "note": "",
+    "domain-group": "rec9cq2x9vNx4Sa7v",
+    "seo-keywords": "",
+    "use-cases": ""
+  },
+  "bulbmonster.com": {
+    "price": "",
+    "note": "",
+    "domain-group": "reckFF9oNmJNKhvzJ",
+    "seo-keywords": "",
+    "use-cases": ""
+  },
+  "shiplighting.com": {
+    "price": "",
+    "note": "",
+    "domain-group": "",
+    "seo-keywords": "ship lighting, marine lighting, LED ship lights, vessel lighting, boat lighting, ship interior lighting, deck lighting, waterproof lighting",
+    "use-cases": "Supplier of lighting for ships and boats; Marine lighting manufacturer; Exporter of waterproof LED lights for vessels; Ship interior and deck lighting installer"
+  },
+  "flowjob.com": {
+    "price": "4500",
+    "note": "",
+    "domain-group": "",
+    "seo-keywords": "flow job, workflow automation, productivity job, smooth workflow, creative work process, job flow management, task flow, flow-based hiring",
+    "use-cases": "Workflow automation SaaS; Productivity tool for creative or technical jobs; Job platform for flow-based work; Project management software"
+  },
+  "bestandbrown.lighting": {
+    "price": "",
+    "note": "",
+    "domain-group": "recyC0sQlXVQ9Gz1q",
+    "seo-keywords": "",
+    "use-cases": ""
+  },
+  "chamonixrentals.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "",
+    "seo-keywords": "Chamonix rentals, Chamonix holiday rentals, Chamonix apartments, Chamonix ski chalets, Chamonix vacation homes, Chamonix accommodation, rent in Chamonix, ski holiday rentals Chamonix",
+    "use-cases": "Vacation rental business in Chamonix; Short-term ski holiday accommodation provider; Property management for rental homes in Chamonix; Chamonix holiday booking platform"
+  },
+  "bargainlighting.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "recytiLgEO9rGWMAS",
+    "seo-keywords": "bargain lighting, discount lighting, cheap lighting, lighting deals, affordable lighting, budget light fixtures, bargain lamps, lighting clearance, lighting sale",
+    "use-cases": "Discount lighting e-commerce store for the UK market; Lighting clearance and overstock retailer; Price comparison website for lighting products; Supplier of affordable home and commercial lighting"
+  },
+  "artlite.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "",
+    "seo-keywords": "art lighting, artistic lighting, artisan lighting, art display lighting, light art, gallery lighting, creative lighting, artistic light fixtures, art light solutions",
+    "use-cases": "Lighting products for art galleries and exhibitions; Brand for artistic light fixtures; Online art-lighting retail store; Company creating illuminated art installations"
+  },
+  "switchesandsockets.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "recpUQWEEYnYpi7jj",
+    "seo-keywords": "",
+    "use-cases": ""
+  },
+  "lampsandtubes.com": {
+    "price": "",
+    "note": "",
+    "domain-group": "",
+    "seo-keywords": "lamps and tubes, fluorescent tubes, LED lamps, LED tubes, light fixtures, lighting tubes, commercial lighting tubes, energy-efficient lamps",
+    "use-cases": "Supplier of lamps and tubes; Wholesale LED tube distributor; Online retailer of fluorescent and LED lighting; Commercial lighting supplier"
+  },
+  "luxover.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "reco5odRvW5KEbJRw",
+    "seo-keywords": "",
+    "use-cases": ""
+  },
+  "homemonster.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "reckFF9oNmJNKhvzJ",
+    "seo-keywords": "home monster, home products, home improvement, home furniture, home décor, home accessories, home appliance deals, home shopping",
+    "use-cases": "Online store for home goods; Brand for home improvement products; Discount retailer for furniture and décor; Homeware subscription box"
+  },
+  "bestandbrown.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "recyC0sQlXVQ9Gz1q",
+    "seo-keywords": "",
+    "use-cases": ""
+  },
+  "bulbbar.com": {
+    "price": "",
+    "note": "",
+    "domain-group": "",
+    "seo-keywords": "bulb bar, decorative bulb lighting, exposed bulb lights, Edison bulb bar, bulb lighting fixture, bulb strip lighting, LED bulb bar, bulb display lighting",
+    "use-cases": "Brand for decorative bulb-based lighting fixtures; Bar or café with a lightbulb design theme; Retailer of decorative and vintage-style bulb lights; Supplier of bulb lighting for commercial and residential spaces"
+  },
+  "hospitallighting.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "",
+    "seo-keywords": "hospital lighting, healthcare lighting, LED hospital lights, medical lighting, surgical lights, patient room lights, hospital corridor lighting, hygienic lighting fixtures",
+    "use-cases": "Supplier of hospital lighting fixtures; Manufacturer of medical-grade lighting; Installation services for healthcare facilities; Specialist in energy-efficient hospital lighting"
+  },
+  "bathroomlights.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "",
+    "seo-keywords": "bathroom lights, LED bathroom lights, bathroom ceiling lights, bathroom wall lights, bathroom spotlights, waterproof bathroom lights, bathroom vanity lighting",
+    "use-cases": "Retailer specialising in bathroom lights; Online store for moisture-resistant light fittings; Supplier of LED bathroom lighting; Provider of bathroom-specific lighting design services"
+  },
+  "qualityleds.com": {
+    "price": "",
+    "note": "",
+    "domain-group": "",
+    "seo-keywords": "quality LEDs, LED lighting, LED bulbs, LED strips, LED fixtures, high-quality LED lights, premium LEDs, LED lighting solutions",
+    "use-cases": "Online retailer of premium LED products; Manufacturer of high-quality LED lighting; Supplier for commercial and residential LED fixtures; LED wholesaler"
+  },
+  "lightbulbsupplies.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "",
+    "seo-keywords": "light bulb supplies, LED bulb supplies, bulb fittings, lighting accessories, light bulb parts, wholesale light bulbs, bulb installation tools, lighting hardware",
+    "use-cases": "Supplier of light bulb hardware and accessories; Wholesale bulb distributor; Online store for bulb fittings and installation tools; Maintenance supply for lighting contractors"
+  },
+  "thelightsource.ie": {
+    "price": "",
+    "note": "",
+    "domain-group": "recWLCnadmss1UL9t",
+    "seo-keywords": "the light source, LED lighting Ireland, lighting supplier Ireland, decorative lighting Ireland, commercial lighting Ireland, light fixtures Ireland, lighting shop Ireland, lighting solutions Ireland",
+    "use-cases": "Irish lighting retailer; Supplier of decorative and commercial lighting; Lighting showroom in Ireland; Lighting design and supply company"
+  },
+  "lightmonster.eu": {
+    "price": "",
+    "note": "",
+    "domain-group": "reckFF9oNmJNKhvzJ",
+    "seo-keywords": "light monster, lighting store EU, LED lighting, decorative lighting, commercial lighting, light fixtures Europe, lighting retailer, lighting shop Europe",
+    "use-cases": "European lighting retailer; Online lighting megastore for EU; Supplier of a wide range of lighting products; Lighting e-commerce brand for Europe"
+  },
+  "lastcalllighting.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "recBbZLZ95WKWGh3r",
+    "seo-keywords": "",
+    "use-cases": ""
+  },
+  "bulbsupplies.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "",
+    "seo-keywords": "bulb supplies, light bulb accessories, lighting supplies, bulb fittings, LED bulb supplies, bulb installation tools, bulb spare parts, lighting hardware",
+    "use-cases": "Supplier of bulb-related hardware; Wholesale lighting accessories; Retailer for bulb fittings and installation tools; Maintenance supply business for lighting contractors"
+  },
+  "bulbs.ws": {
+    "price": "",
+    "note": "",
+    "domain-group": "reczSrOnyETX5krqS",
+    "seo-keywords": "bulbs, light bulbs, LED bulbs, decorative bulbs, energy-efficient bulbs, smart bulbs, lighting bulbs, bulb store",
+    "use-cases": "Global online bulb store; Supplier of various light bulb types; Retailer for decorative or energy-efficient bulbs; Wholesale bulb distributor"
+  },
+  "thelightsource.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "recWLCnadmss1UL9t",
+    "seo-keywords": "",
+    "use-cases": ""
+  },
+  "luxurylighting.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "",
+    "seo-keywords": "luxury lighting, high-end lighting, designer lighting, luxury light fixtures, bespoke lighting, decorative lighting, premium lighting, high-quality lighting",
+    "use-cases": "Supplier of luxury lighting; Designer lighting showroom; Manufacturer of bespoke lighting; Retailer for premium decorative light fixtures"
+  },
+  "lightsource360.com": {
+    "price": "",
+    "note": "",
+    "domain-group": "recWLCnadmss1UL9t",
+    "seo-keywords": "lightsource 360, lighting supplier, LED lighting, lighting design, lighting showroom, commercial lighting, decorative lighting, lighting solutions",
+    "use-cases": "International lighting supplier; Lighting design and supply brand; Lighting showroom; Lighting consultancy"
+  },
+  "lightsourcepro.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "recWLCnadmss1UL9t",
+    "seo-keywords": "lightsource pro, professional lighting, lighting design, lighting installation, commercial lighting, decorative lighting, lighting supplier UK, lighting consultancy",
+    "use-cases": "Professional lighting design company; Lighting installation service; UK supplier of commercial and decorative lighting; Lighting consultancy"
+  },
+  "sovereignlights.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "recyXTrhJrjw0TwXu",
+    "seo-keywords": "",
+    "use-cases": ""
+  },
+  "crystalbits.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "",
+    "seo-keywords": "crystal bits, crystal pieces, crystal decorations, crystal lighting components, crystal jewellery parts, crystal beads, crystal chandelier parts, crystal craft supplies",
+    "use-cases": "Supplier of crystal components for lighting; Retailer of crystal craft parts; Jewellery-making crystal supplier; Wholesale crystal decorations"
+  },
   "archiangel.com": {
-    "price": "£12,345",
+    "price": "",
     "note": "",
+    "domain-group": "",
     "seo-keywords": "architecture design, architectural services, architectural angel, angel investor architecture, angel funded architecture, architectural inspiration, architecture business funding, architecture guardian, angel architect",
     "use-cases": "Architecture firm branding as a guiding/protective influence; Platform connecting architects with investors; Inspirational architecture blog or magazine; Charity or NGO using architecture for good causes"
   },
-  "example.com": {
-    "price": "£12,345",
+  "churchlighting.co.uk": {
+    "price": "",
     "note": "",
-    "domain-group": "example",
-    "seo-keywords": "architecture design, architectural services, architectural angel, angel investor architecture, angel funded architecture, architectural inspiration, architecture business funding, architecture guardian, angel architect",
-    "use-cases": "Architecture firm branding as a guiding/protective influence; Platform connecting architects with investors; Inspirational architecture blog or magazine; Charity or NGO using architecture for good causes"
+    "domain-group": "rec2ElpbEL5xBLkP5",
+    "seo-keywords": "",
+    "use-cases": ""
   },
-  "example.ai": {
-    "domain-group": "example",
-    "price": "£12,345",
+  "hotellighting.uk": {
+    "price": "",
     "note": "",
-    "seo-keywords": "architecture design, architectural services, architectural angel, angel investor architecture, angel funded architecture, architectural inspiration, architecture business funding, architecture guardian, angel architect",
-    "use-cases": "Architecture firm branding as a guiding/protective influence; Platform connecting architects with investors; Inspirational architecture blog or magazine; Charity or NGO using architecture for good causes"
+    "domain-group": "reclmCJ9flr5Dh7DK",
+    "seo-keywords": "hotel lighting, hospitality lighting, LED hotel lights, hotel room lighting, hotel lobby lighting, custom hotel lighting, decorative hotel lights, commercial hotel lighting",
+    "use-cases": "Supplier of lighting for hotels; Manufacturer of bespoke hospitality lighting; Installer for hotel lighting projects; Designer of luxury hotel lighting schemes"
   },
-  "example.net": {
-    "domain-group": "example",
-    "price": "£12,345",
+  "wineimports.co.uk": {
+    "price": "",
     "note": "",
-    "seo-keywords": "architecture design, architectural services, architectural angel, angel investor architecture, angel funded architecture, architectural inspiration, architecture business funding, architecture guardian, angel architect",
-    "use-cases": "Architecture firm branding as a guiding/protective influence; Platform connecting architects with investors; Inspirational architecture blog or magazine; Charity or NGO using architecture for good causes"
+    "domain-group": "",
+    "seo-keywords": "wine imports, imported wine UK, wine distributor, wine wholesaler, international wine, fine wine imports, wine supplier UK, wine import company",
+    "use-cases": "UK wine import business; Wine wholesaler; Supplier of imported wines to retailers and restaurants; Online wine store specialising in international wines"
+  },
+  "casambicontrols.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "",
+    "seo-keywords": "Casambi controls, Casambi lighting, wireless lighting control, smart lighting controls, Bluetooth lighting control, Casambi dimmers, Casambi switches, Casambi automation",
+    "use-cases": "Reseller or installer of Casambi smart lighting controls; Lighting automation service provider; Wholesale Casambi hardware supplier; Consultancy for wireless lighting integration"
+  },
+  "lightingmonster.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "reckFF9oNmJNKhvzJ",
+    "seo-keywords": "lighting monster, lighting store UK, LED lighting, decorative lighting, commercial lighting, light fixtures UK, lighting retailer, lighting shop UK",
+    "use-cases": "UK lighting retailer; Online lighting megastore; Supplier of a wide range of lighting products; Lighting e-commerce brand"
+  },
+  "nodelighting.com": {
+    "price": "",
+    "note": "",
+    "domain-group": "rec9F5aqUsd3RSXYJ",
+    "seo-keywords": "",
+    "use-cases": ""
+  },
+  "crystalcomponents.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "",
+    "seo-keywords": "crystal components, crystal lighting parts, chandelier crystals, crystal beads, crystal spare parts, crystal lighting accessories, crystal drops, crystal trimmings",
+    "use-cases": "Supplier of crystal parts for lighting; Wholesale chandelier crystal distributor; Retailer for crystal craft and jewellery parts; Restoration parts provider for vintage lighting"
+  },
+  "luxovers.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "reco5odRvW5KEbJRw",
+    "seo-keywords": "",
+    "use-cases": ""
+  },
+  "kitchen-lighting.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "",
+    "seo-keywords": "kitchen lighting, kitchen ceiling lights, kitchen LED lights, kitchen spotlights, kitchen pendant lights, under cabinet lighting, kitchen task lighting, kitchen light fixtures",
+    "use-cases": "Retailer of kitchen lighting; Supplier of LED kitchen lights; Online store for under-cabinet lighting; Specialist in kitchen-specific lighting design"
+  },
+  "lightingboutique.com": {
+    "price": "",
+    "note": "",
+    "domain-group": "",
+    "seo-keywords": "lighting boutique, designer lighting, luxury lighting, decorative lighting, boutique light fixtures, designer lamps, lighting showroom, high-end lighting",
+    "use-cases": "International high-end lighting retail store; Designer lighting showroom; Boutique lighting brand; Supplier of decorative lighting for architects and designers"
+  },
+  "bestandbrown.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "recyC0sQlXVQ9Gz1q",
+    "seo-keywords": "",
+    "use-cases": ""
+  },
+  "ildb.com": {
+    "price": "",
+    "note": "",
+    "domain-group": "recV7C0SJgDblyAnK",
+    "seo-keywords": "ILDB, international lighting, lighting design, lighting business, lighting directory, lighting consultancy, lighting services, lighting network, global interiors database, interior design suppliers, international literature database, global book database, author directory, literary network",
+    "use-cases": "Global lighting consultancy; International lighting supplier database; Lighting design and supply company; Lighting industry network; Global interiors and lighting supplier platform; Interior design resource for architects; International literature database; Global author and book directory; Literary community platform; Worldwide book review and rating site"
+  },
+  "bestandbrown.com": {
+    "price": "",
+    "note": "",
+    "domain-group": "recyC0sQlXVQ9Gz1q",
+    "seo-keywords": "",
+    "use-cases": ""
+  },
+  "lighting.co.in": {
+    "price": "",
+    "note": "",
+    "domain-group": "",
+    "seo-keywords": "lighting India, LED lighting India, lighting fixtures India, lighting suppliers India, lighting stores India, lighting industry India, lighting showroom India, lighting export India",
+    "use-cases": "Indian lighting supplier directory; E-commerce store for lighting products; Lighting export business; Lighting showroom marketing site"
+  },
+  "bathroomlighting.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "",
+    "seo-keywords": "bathroom lighting, bathroom light fixtures, waterproof lighting, LED bathroom lights, bathroom mirror lights, bathroom ceiling lights, IP44 lighting, bathroom wall lights",
+    "use-cases": "Online store specialising in bathroom lighting; Supplier of IP-rated bathroom light fixtures; Bathroom renovation business focusing on lighting; Specialist in moisture-resistant lighting solutions"
+  },
+  "healthcarelighting.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "",
+    "seo-keywords": "healthcare lighting, hospital lighting, medical lighting, LED healthcare lights, clinic lighting, surgical lighting, patient room lighting, healthcare light fixtures",
+    "use-cases": "Supplier of lighting for healthcare facilities; Manufacturer of medical-grade lighting; Installer of hospital and clinic lighting; Specialist in hygienic and safe lighting systems"
+  },
+  "publighting.com": {
+    "price": "",
+    "note": "",
+    "domain-group": "recJCE2IbfzLuRkFe",
+    "seo-keywords": "pub lighting, bar lighting, LED pub lights, pub ambience lighting, decorative pub lighting, commercial pub lighting, hospitality lighting, pub interior lighting",
+    "use-cases": "International supplier of lighting for pubs; Pub lighting installation company; Hospitality lighting brand; Decorative pub lighting manufacturer"
+  },
+  "crystalchandeliers.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "rec7c7CmRbR7AoPko",
+    "seo-keywords": "",
+    "use-cases": ""
+  },
+  "hotellighting.eu": {
+    "price": "",
+    "note": "",
+    "domain-group": "reclmCJ9flr5Dh7DK",
+    "seo-keywords": "",
+    "use-cases": ""
+  },
+  "montblancproperty.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "",
+    "seo-keywords": "Mont Blanc property, Mont Blanc real estate, Mont Blanc homes, Mont Blanc apartments, property for sale Mont Blanc, Mont Blanc chalets, buy property Mont Blanc, Mont Blanc estate agent",
+    "use-cases": "Real estate agency for Mont Blanc region; Property listings website for Mont Blanc; Vacation home sales in the Alps; Property management in Mont Blanc area"
+  },
+  "ildb.eu": {
+    "price": "",
+    "note": "",
+    "domain-group": "recV7C0SJgDblyAnK",
+    "seo-keywords": "ILDB, European lighting, lighting design, lighting business, lighting directory, lighting consultancy, lighting services, lighting network, European interiors database, EU interior design directory, interiors and lighting suppliers, European literature database, EU book directory, author listings Europe, literary network Europe",
+    "use-cases": "European lighting consultancy; Lighting supplier network in EU; Lighting design and supply platform; Lighting trade organisation; European interiors and lighting supplier directory; Interior design trade resource; European literature database; EU-focused book and author directory; Literary events listing site; European literary community platform"
+  },
+  "lighting4.com": {
+    "price": "",
+    "note": "",
+    "domain-group": "",
+    "seo-keywords": "lighting for home, lighting for business, lighting for office, lighting for kitchen, lighting for outdoors, LED lighting for all, lighting for events, decorative lighting for interiors",
+    "use-cases": "Online lighting retailer; Lighting solutions for multiple applications; Lighting wholesaler; Marketing brand with broad appeal"
+  },
+  "sovereignfurnishings.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "recyXTrhJrjw0TwXu",
+    "seo-keywords": "",
+    "use-cases": ""
+  },
+  "palatiallighting.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "",
+    "seo-keywords": "palatial lighting, luxury lighting, decorative lighting, palatial light fixtures, ornate lighting, grand lighting designs, high-end lighting, bespoke chandeliers",
+    "use-cases": "Supplier of grand and ornate lighting; Manufacturer of luxury light fixtures; Lighting design for palatial interiors; Showroom for decorative chandeliers"
+  },
+  "ibulb.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "",
+    "seo-keywords": "iBulb, smart bulb, intelligent bulb, LED smart bulb, Bluetooth bulb, WiFi bulb, smart lighting, connected light bulb",
+    "use-cases": "Retailer of smart bulbs; Manufacturer of connected lighting products; IoT smart lighting brand; E-commerce store for intelligent bulbs"
+  },
+  "tablelampshop.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "recxjtgkVtcLuntLj",
+    "seo-keywords": "",
+    "use-cases": ""
+  },
+  "lightmonster.com": {
+    "price": "",
+    "note": "",
+    "domain-group": "reckFF9oNmJNKhvzJ",
+    "seo-keywords": "",
+    "use-cases": ""
+  },
+  "crystalchandeliers.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "rec7c7CmRbR7AoPko",
+    "seo-keywords": "crystal chandeliers, luxury chandeliers, crystal ceiling lights, ornate lighting, crystal pendant lights, decorative ceiling lighting, high-end lighting fixtures, chandelier shop",
+    "use-cases": "Retailer of crystal chandeliers; Manufacturer of luxury decorative lighting; Showroom for high-end crystal lighting; Supplier to interior designers and luxury hospitality"
+  },
+  "ildb.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "recV7C0SJgDblyAnK",
+    "seo-keywords": "ILDB, lighting design, lighting business, lighting directory, lighting consultancy, lighting services, lighting network, interiors database, interior design directory, interior and lighting suppliers, literature database, book database, literary directory, author listings, book reviews, literary network",
+    "use-cases": "Lighting consultancy brand; Lighting design business; Online lighting supplier directory; Platform for lighting professionals; Interiors and lighting supplier database; Interior design firm directory; Trade resource for designers; Literature database similar to IMDb; Author and book directory; Book review platform; Literary networking site"
+  },
+  "flualighting.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "",
+    "seo-keywords": "Flua lighting, luxury lighting, designer lighting, architectural lighting, Flua light fixtures, decorative lighting, high-end lighting, Flua lamps",
+    "use-cases": "UK retailer of Flua brand lighting; Distributor of high-end lighting fixtures; Interior design supply business; Architectural lighting supplier"
+  },
+  "contractlighting.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "",
+    "seo-keywords": "contract lighting, LED contract lights, hospitality lighting, hotel lighting, restaurant lighting, commercial contract lighting, bespoke lighting contracts, architectural lighting",
+    "use-cases": "Lighting supplier for contract and hospitality projects; Manufacturer of lighting for hotels and restaurants; Provider of large-scale commercial lighting contracts; Lighting design and supply service for architects"
+  },
+  "lightmonster.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "reckFF9oNmJNKhvzJ",
+    "seo-keywords": "",
+    "use-cases": ""
+  },
+  "lightingsource.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "recWLCnadmss1UL9t",
+    "seo-keywords": "lighting source, lighting supplier UK, lighting manufacturer, LED lighting source, decorative lighting source, commercial lighting supplier, wholesale lighting, lighting products",
+    "use-cases": "UK lighting supplier; Wholesale lighting distributor; Manufacturer of lighting products; E-commerce store for lighting"
+  },
+  "sovereignlights.com": {
+    "price": "",
+    "note": "",
+    "domain-group": "recyXTrhJrjw0TwXu",
+    "seo-keywords": "",
+    "use-cases": ""
+  },
+  "lightsource360.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "recWLCnadmss1UL9t",
+    "seo-keywords": "lightsource 360, lighting supplier, LED lighting, lighting design, lighting showroom, commercial lighting, decorative lighting, lighting solutions",
+    "use-cases": "UK lighting supplier offering full-range lighting solutions; Lighting design and supply business; Lighting showroom brand; Lighting consultancy"
+  },
+  "clearancelightingshop.com": {
+    "price": "",
+    "note": "",
+    "domain-group": "recBsvcewhzE98c44",
+    "seo-keywords": "",
+    "use-cases": ""
+  },
+  "officelighting.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "",
+    "seo-keywords": "office lighting, commercial lighting, LED office lights, office ceiling lights, office desk lamps, office task lighting, modern office lighting, workplace lighting",
+    "use-cases": "Supplier of office lighting fixtures; Commercial lighting retailer; Office lighting installation company; Manufacturer of workplace lighting"
+  },
+  "switchesandsockets.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "recpUQWEEYnYpi7jj",
+    "seo-keywords": "",
+    "use-cases": ""
+  },
+  "lightingbrokerage.com": {
+    "price": "",
+    "note": "",
+    "domain-group": "",
+    "seo-keywords": "lighting brokerage, lighting sales broker, lighting deals, wholesale lighting broker, lighting supplier broker, lighting reseller broker, lighting industry broker, lighting stock brokerage",
+    "use-cases": "International lighting broker service; Wholesale lighting deals platform; Lighting sales agency; Broker for clearance and surplus lighting stock"
+  },
+  "chamonixproperty.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "",
+    "seo-keywords": "Chamonix property, Chamonix real estate, Chamonix homes, Chamonix apartments, property for sale Chamonix, Chamonix chalets, buy property Chamonix, Chamonix estate agent",
+    "use-cases": "Real estate agency specialising in Chamonix; Property listings portal for Chamonix; Vacation home sales in French Alps; Local property management company"
+  },
+  "lightingboutique.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "",
+    "seo-keywords": "lighting boutique, designer lighting, luxury lighting, decorative lighting, boutique light fixtures, designer lamps, lighting showroom, high-end lighting UK",
+    "use-cases": "High-end lighting retail store; Designer lighting showroom; Boutique lighting brand; Supplier of decorative lighting for interior designers"
+  },
+  "archibox.co": {
+    "price": "",
+    "note": "",
+    "domain-group": "rechinuCsOM3XXfDT",
+    "seo-keywords": "",
+    "use-cases": ""
+  },
+  "lightinginspiration.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "",
+    "seo-keywords": "lighting inspiration, lighting ideas, lighting design inspiration, decorative lighting ideas, lighting trends, modern lighting inspiration, lighting styles, lighting showcase",
+    "use-cases": "Lighting ideas blog; Online inspiration gallery for designers; Lighting showroom marketing; Lighting trend publication"
+  },
+  "marinabookings.com": {
+    "price": "",
+    "note": "",
+    "domain-group": "recuvr6zd0hLpO2kB",
+    "seo-keywords": "marina bookings, boat berth bookings, marina reservations, yacht mooring bookings, marina slip rental, marina space booking, dock bookings, harbour bookings",
+    "use-cases": "International marina booking platform; Yacht mooring reservation service; Global harbour slip rental website; Dock space booking service"
+  },
+  "tracklighting.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "",
+    "seo-keywords": "track lighting, LED track lights, adjustable track lighting, commercial track lighting, retail track lighting, gallery track lighting, modern track lighting, track lighting systems",
+    "use-cases": "Supplier of LED track lighting; Commercial and retail lighting installation; Manufacturer of adjustable track lighting systems; Track lighting retailer"
+  },
+  "archibox.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "rechinuCsOM3XXfDT",
+    "seo-keywords": "architecture storage, architectural box, architecture toolkit, building design tools, architect storage solutions, architecture archive, architecture plans storage, architecture design kit",
+    "use-cases": "Storage solutions for architects; SaaS for storing or sharing architectural plans; Subscription box with architecture-related items; Prefabricated modular building systems"
+  },
+  "restaurantsupplies.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "",
+    "seo-keywords": "restaurant supplies, hospitality supplies, restaurant equipment, catering supplies, commercial kitchen equipment, restaurant furniture, restaurant tableware, hospitality products",
+    "use-cases": "Supplier of equipment and products for restaurants; Wholesale catering supplies; Hospitality furniture retailer; Restaurant refurbishment supply business"
+  },
+  "churchillandbrown.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "rec2gTHuc4TLRYldO",
+    "seo-keywords": "Churchill and Brown, UK estate agents, property sales, property rentals, letting agents, property management, UK property services, estate agency",
+    "use-cases": "Estate agency branding as Churchill and Brown; Property sales and lettings business; Property management company; Real estate investment consultancy"
+  },
+  "restaurantlighting.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "",
+    "seo-keywords": "restaurant lighting, hospitality lighting, LED restaurant lights, restaurant ambience lighting, decorative restaurant lighting, commercial restaurant lighting, restaurant interior lighting",
+    "use-cases": "Supplier of lighting for restaurants; Hospitality lighting designer; Manufacturer of decorative restaurant lighting; Restaurant lighting installation company"
+  },
+  "archibox.com": {
+    "price": "",
+    "note": "",
+    "domain-group": "rechinuCsOM3XXfDT",
+    "seo-keywords": "architecture storage, architectural box, architecture toolkit, building design tools, architect storage solutions, architecture archive, architecture plans storage, architecture design kit",
+    "use-cases": "Storage solutions for architects; SaaS for storing or sharing architectural plans; Subscription box with architecture-related items; Prefabricated modular building systems"
+  },
+  "crystalchandelier.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "rec7c7CmRbR7AoPko",
+    "seo-keywords": "crystal chandelier, crystal ceiling lights, luxury chandeliers, crystal pendant lights, ornate lighting, decorative ceiling lighting, crystal lighting fixtures, chandelier shop",
+    "use-cases": "Retailer of crystal chandeliers; Manufacturer of luxury lighting; Showroom for high-end decorative lighting; Supplier to interior designers and hospitality projects"
+  },
+  "sovereignlighting.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "recyXTrhJrjw0TwXu",
+    "seo-keywords": "",
+    "use-cases": ""
+  },
+  "bargainlighting.com": {
+    "price": "",
+    "note": "",
+    "domain-group": "recytiLgEO9rGWMAS",
+    "seo-keywords": "bargain lighting, discount lighting, cheap lighting, lighting deals, affordable lighting, budget light fixtures, bargain lamps, lighting clearance, lighting sale",
+    "use-cases": "Discount lighting e-commerce store for global market; Lighting clearance and overstock retailer; Price comparison website for lighting products; Supplier of affordable home and commercial lighting"
+  },
+  "publighting.co.uk": {
+    "price": "",
+    "note": "",
+    "domain-group": "recJCE2IbfzLuRkFe",
+    "seo-keywords": "pub lighting, bar lighting, LED pub lights, pub ambience lighting, decorative pub lighting, commercial pub lighting, hospitality lighting, pub interior lighting",
+    "use-cases": "Supplier of lighting for pubs; UK pub lighting installation service; Manufacturer of decorative pub lighting; Hospitality sector lighting retailer"
   }
 }
