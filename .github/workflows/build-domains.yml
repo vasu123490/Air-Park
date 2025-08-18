@@ -81,16 +81,16 @@ jobs:
               if not dn:
                   continue
 
+              # Only include if Sell? is True
+              if not f.get("Sell?"):
+                  skipped += 1
+                  continue
+
               price = to_text(f.get("Sell Price"))
               note  = to_text(f.get("Sell Note"))
               group = to_text(f.get("Domain Group"))
               seo   = to_text(f.get("SEO Keywords"))
               uses  = to_text(f.get("Use-cases"))
-
-              # Skip records where only DomainName is present (all mapped fields empty)
-              if not any([price, note, group, seo, uses]):
-                  skipped += 1
-                  continue
 
               out_map[dn] = {
                   "price": price,
