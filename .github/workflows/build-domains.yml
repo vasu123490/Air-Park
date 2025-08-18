@@ -15,9 +15,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      AT_BASE: appxLxgRbkXd31y9w
-      AT_TABLE: Domains
-      # AT_VIEW: Grid view   # optional
+      AT_BASE: appxLxgRbkXd31y9w   # Your Airtable Base ID
+      AT_TABLE: Domains            # Table name
+      # AT_VIEW: Grid view         # Optional: set exactly if you want to filter by a view
     steps:
       - uses: actions/checkout@v4
 
@@ -32,10 +32,11 @@ jobs:
 
           BASE   = os.environ["AT_BASE"]
           TABLE  = os.environ["AT_TABLE"]
-          VIEW   = os.environ.get("AT_VIEW")
+          VIEW   = os.environ.get("AT_VIEW")  # may be None
           TOKEN  = os.environ["AIRTABLE_TOKEN"]
 
-          def q(s): return urllib.parse.quote(s)
+          def q(s): 
+              return urllib.parse.quote(s)
 
           def fetch_all(base, table, view=None):
               api = f"https://api.airtable.com/v0/{base}/{q(table)}"
@@ -51,9 +52,24 @@ jobs:
                       data = json.loads(resp.read().decode("utf-8"))
                   out.extend(data.get("records", []))
                   off = data.get("offset")
-                  if not off: break
+                  if not off:
+                      break
                   url = api + params + "&offset=" + q(off)
               return out
+
+          def to_text(v):
+              """Normalize Airtable values (strings, numbers, lists, dicts) into a display string."""
+              if v is None:
+                  return ""
+              if isinstance(v, str):
+                  return v.strip()
+              if isinstance(v, (int, float, bool)):
+                  return str(v)
+              if isinstance(v, list):
+                  return ", ".join(to_text(x) for x in v if x is not None)
+              if isinstance(v, dict):
+                  return v.get("name") or v.get("label") or json.dumps(v, ensure_ascii=False)
+              return str(v)
 
           records = fetch_all(BASE, TABLE, VIEW)
 
@@ -61,16 +77,17 @@ jobs:
           skipped = 0
           for r in records:
               f = r.get("fields", {})
-              dn = (f.get("DomainName") or "").strip().lower()
+              dn    = to_text(f.get("DomainName")).lower()
               if not dn:
                   continue
 
-              price = (f.get("Sell Price") or "").strip()
-              note  = (f.get("Sell Note") or "").strip()
-              group = (f.get("Domain Group") or "").strip()
-              seo   = (f.get("SEO Keywords") or "").strip()
-              uses  = (f.get("Use-cases") or "").strip()
+              price = to_text(f.get("Sell Price"))
+              note  = to_text(f.get("Sell Note"))
+              group = to_text(f.get("Domain Group"))
+              seo   = to_text(f.get("SEO Keywords"))
+              uses  = to_text(f.get("Use-cases"))
 
+              # Skip records where only DomainName is present (all mapped fields empty)
               if not any([price, note, group, seo, uses]):
                   skipped += 1
                   continue
@@ -85,10 +102,14 @@ jobs:
 
           with open("data/domains.json","w",encoding="utf-8") as fp:
               json.dump(out_map, fp, ensure_ascii=False, indent=2)
+
+          print(f"Generated data/domains.json with {len(out_map)} domains; skipped {skipped}.")
           PY
 
       - name: Preview JSON
-        run: head -n 30 data/domains.json || true
+        run: |
+          echo "First lines of data/domains.json:"
+          head -n 30 data/domains.json || true
 
       - name: Commit & push
         run: |
