@@ -1,21 +1,25 @@
 # .github/workflows/build-domains.yml
 name: Build domains.json from Airtable
+
 on:
-  push: { branches: [main] }
+  push: { branches: [ main ] }
   workflow_dispatch:
-  schedule:
-    - cron: "0 */6 * * *"
+  schedule: [ { cron: "0 */6 * * *" } ]
+
+permissions:
+  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      AT_BASE: appxLxgRbkXd31y9w
-      AT_TABLE: Domains
+      AT_BASE: appxLxgRbkXd31y9w   # <-- base ID (NOT the base name)
+      AT_TABLE: Domains            # <-- table name (case sensitive)
+      # AT_VIEW: Grid view         # <-- OPTIONAL. Omit if unsure.
     steps:
       - uses: actions/checkout@v4
 
-      - name: Generate data/domains.json from Airtable
+      - name: Fetch Airtable -> data/domains.json
         env:
           AIRTABLE_TOKEN: ${{ secrets.AIRTABLE_TOKEN }}
         run: |
@@ -23,60 +27,95 @@ jobs:
           mkdir -p data
 
           python3 - << 'PY'
-          import json, os, urllib.parse, urllib.request
+import json, os, sys, urllib.parse, urllib.request
 
-          BASE   = os.environ["AT_BASE"]
-          TABLE  = os.environ["AT_TABLE"]
-          TOKEN  = os.environ["AIRTABLE_TOKEN"]
+BASE   = os.environ["AT_BASE"]
+TABLE  = os.environ["AT_TABLE"]
+VIEW   = os.environ.get("AT_VIEW")  # may be None
+TOKEN  = os.environ["AIRTABLE_TOKEN"]
 
-          api = f"https://api.airtable.com/v0/{BASE}/{urllib.parse.quote(TABLE)}"
-          headers = { "Authorization": f"Bearer {TOKEN}" }
+def q(s): return urllib.parse.quote(s)
 
-          records = []
-          params = "?pageSize=100&view=" + urllib.parse.quote("Grid view")
-          url = api + params
-          while True:
-            req = urllib.request.Request(url, headers=headers)
+def fetch_all(base, table, view=None):
+    api = f"https://api.airtable.com/v0/{base}/{q(table)}"
+    params = "?pageSize=100"
+    if view:
+        params += f"&view={q(view)}"
+    headers = { "Authorization": f"Bearer {TOKEN}" }
+
+    out = []
+    url = api + params
+    while True:
+        req = urllib.request.Request(url, headers=headers)
+        try:
             with urllib.request.urlopen(req) as resp:
-              data = json.loads(resp.read().decode("utf-8"))
-            records.extend(data.get("records", []))
-            off = data.get("offset")
-            if not off: break
-            url = api + params + "&offset=" + urllib.parse.quote(off)
+                payload = resp.read().decode("utf-8")
+                data = json.loads(payload)
+        except urllib.error.HTTPError as e:
+            body = e.read().decode("utf-8", "ignore")
+            # Surface Airtable's message for 422/other errors
+            print(f"::error::HTTP {e.code} from Airtable: {body}")
+            raise
+        out.extend(data.get("records", []))
+        off = data.get("offset")
+        if not off:
+            break
+        url = api + params + "&offset=" + q(off)
+    return out
 
-          out = {}
-          for r in records:
-            f = r.get("fields", {})
-            dn = (f.get("DomainName") or "").strip().lower()
-            if not dn:
-              continue
+# Try without view if VIEW not set; if set and fails with 422, retry without.
+try:
+    records = fetch_all(BASE, TABLE, VIEW)
+except urllib.error.HTTPError as e:
+    if VIEW and e.code == 422:
+        print("::warning::View likely invalid; retrying without 'view' parameter…")
+        records = fetch_all(BASE, TABLE, None)
+    else:
+        raise
 
-            price = (f.get("Sell Price") or "").strip()
-            note  = (f.get("Sell Note") or "").strip()
-            group = (f.get("Domain Group") or "").strip()
-            seo   = (f.get("SEO Keywords") or "").strip()
-            uses  = (f.get("Use-cases") or "").strip()
+print(f"::notice::{len(records)} records fetched")
 
-            # skip if all mapped fields are empty (only DomainName present)
-            if not any([price, note, group, seo, uses]):
-              continue
+out_map = {}
+skipped = 0
+for r in records:
+    f = r.get("fields", {})
+    dn = (f.get("DomainName") or "").strip().lower()
+    if not dn:
+        continue
 
-            out[dn] = {
-              "price": price,
-              "note": note,
-              "domain-group": group,
-              "seo-keywords": seo,
-              "use-cases": uses,
-            }
+    price = (f.get("Sell Price") or "").strip()
+    note  = (f.get("Sell Note") or "").strip()
+    group = (f.get("Domain Group") or "").strip()
+    seo   = (f.get("SEO Keywords") or "").strip()
+    uses  = (f.get("Use-cases") or "").strip()
 
-          with open("data/domains.json","w",encoding="utf-8") as fp:
-            json.dump(out, fp, ensure_ascii=False, indent=2)
-          PY
+    if not any([price, note, group, seo, uses]):
+        skipped += 1
+        continue
 
-      - name: Commit & push domains.json
+    out_map[dn] = {
+        "price": price,
+        "note": note,
+        "domain-group": group,
+        "seo-keywords": seo,
+        "use-cases": uses,
+    }
+
+print(f"::notice::{skipped} records skipped (only DomainName set)")
+
+with open("data/domains.json","w",encoding="utf-8") as fp:
+    json.dump(out_map, fp, ensure_ascii=False, indent=2)
+PY
+
+      - name: Preview JSON
+        run: |
+          head -n 40 data/domains.json || true
+
+      - name: Commit & push
         run: |
           git config user.name "github-actions"
           git config user.email "actions@users.noreply.github.com"
           git add data/domains.json
-          git commit -m "Update domains.json from Airtable" || echo "No changes"
+          git diff --cached --quiet && { echo "No changes to commit"; exit 0; }
+          git commit -m "Update domains.json from Airtable"
           git push
