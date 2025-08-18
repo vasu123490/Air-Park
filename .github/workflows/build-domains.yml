@@ -2,9 +2,11 @@
 name: Build domains.json from Airtable
 
 on:
-  push: { branches: [ main ] }
+  push:
+    branches: [ main ]
   workflow_dispatch:
-  schedule: [ { cron: "0 */6 * * *" } ]
+  schedule:
+    - cron: "0 */6 * * *"
 
 permissions:
   contents: write
@@ -13,9 +15,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      AT_BASE: appxLxgRbkXd31y9w   # <-- base ID (NOT the base name)
-      AT_TABLE: Domains            # <-- table name (case sensitive)
-      # AT_VIEW: Grid view         # <-- OPTIONAL. Omit if unsure.
+      AT_BASE: appxLxgRbkXd31y9w       # Your Airtable Base ID
+      AT_TABLE: Domains                # Table name
+      # AT_VIEW: Grid view             # Optional – remove if unsure
     steps:
       - uses: actions/checkout@v4
 
@@ -26,12 +28,12 @@ jobs:
           set -euo pipefail
           mkdir -p data
 
-          python3 - << 'PY'
+          python3 - <<'PY'
 import json, os, sys, urllib.parse, urllib.request
 
 BASE   = os.environ["AT_BASE"]
 TABLE  = os.environ["AT_TABLE"]
-VIEW   = os.environ.get("AT_VIEW")  # may be None
+VIEW   = os.environ.get("AT_VIEW")
 TOKEN  = os.environ["AIRTABLE_TOKEN"]
 
 def q(s): return urllib.parse.quote(s)
@@ -47,31 +49,15 @@ def fetch_all(base, table, view=None):
     url = api + params
     while True:
         req = urllib.request.Request(url, headers=headers)
-        try:
-            with urllib.request.urlopen(req) as resp:
-                payload = resp.read().decode("utf-8")
-                data = json.loads(payload)
-        except urllib.error.HTTPError as e:
-            body = e.read().decode("utf-8", "ignore")
-            # Surface Airtable's message for 422/other errors
-            print(f"::error::HTTP {e.code} from Airtable: {body}")
-            raise
+        with urllib.request.urlopen(req) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
         out.extend(data.get("records", []))
         off = data.get("offset")
-        if not off:
-            break
+        if not off: break
         url = api + params + "&offset=" + q(off)
     return out
 
-# Try without view if VIEW not set; if set and fails with 422, retry without.
-try:
-    records = fetch_all(BASE, TABLE, VIEW)
-except urllib.error.HTTPError as e:
-    if VIEW and e.code == 422:
-        print("::warning::View likely invalid; retrying without 'view' parameter…")
-        records = fetch_all(BASE, TABLE, None)
-    else:
-        raise
+records = fetch_all(BASE, TABLE, VIEW)
 
 print(f"::notice::{len(records)} records fetched")
 
@@ -101,21 +87,19 @@ for r in records:
         "use-cases": uses,
     }
 
-print(f"::notice::{skipped} records skipped (only DomainName set)")
-
+print(f"::notice::{skipped} records skipped")
 with open("data/domains.json","w",encoding="utf-8") as fp:
     json.dump(out_map, fp, ensure_ascii=False, indent=2)
 PY
 
       - name: Preview JSON
-        run: |
-          head -n 40 data/domains.json || true
+        run: head -n 30 data/domains.json || true
 
       - name: Commit & push
         run: |
           git config user.name "github-actions"
           git config user.email "actions@users.noreply.github.com"
           git add data/domains.json
-          git diff --cached --quiet && { echo "No changes to commit"; exit 0; }
+          git diff --cached --quiet && { echo "No changes"; exit 0; }
           git commit -m "Update domains.json from Airtable"
           git push
